@@ -1,0 +1,12 @@
+[Unit]
+Description=script description %I
+
+[Service]
+Type=simple
+ExecStart=PHPPATH index.php PORT
+Restart=on-failure
+RestartSec=5s
+ExecStart=PROJECTPATH
+
+[Install]
+WantedBy=multi-user.target

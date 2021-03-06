@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "danog/madelineproto": "dev-master",
+        "amphp/http-server": "dev-master"
+    },
+  "require": {
+    "ext-json": "*",
+    "amphp/redis": "^1.0"
+  }
+}

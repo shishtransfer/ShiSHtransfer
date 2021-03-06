@@ -1,0 +1,16 @@
+{
+    "BACKUP":"@USERNAME",
+    "MAIN":{
+        "ACC1 (username)":"3591",
+        "ACC2":"3592",
+        "ACC3":"3593",
+        "ACC4":"3594",
+        "ACC5":"3595",
+        "ACC6":"3596",
+        "ACC7":"3597",
+        "ACC8":"3598",
+        "ACC9":"3599",
+        "ACC10":"3601"
+    },
+    "mysql_string": "host=127.0.0.1 user=USER password=PASSWORD db=shishtransfer"
+}

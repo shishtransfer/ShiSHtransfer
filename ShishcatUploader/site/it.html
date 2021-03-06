@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="dropzone.js"></script>
+        <link rel="stylesheet" href="dropzone.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <style>
+            #counters {
+                display: grid;
+                width: 100vw;
+                grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+            }
+    
+            #counters > div > b {
+                display: block;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width">
+        <style>html {background-color: #0e1011 !important;}html, body, input, textarea, select, button, .dropzone {background-color: #0e1011;}html, body, input, textarea, select, button, .dropzone  {border-color: #535353;color: #f2f0ed;}a {color: #2b93ff;}</style>
+        <script src="it.js"></script><script src="script.min.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">ShiSHTransfer</h1>
+        <p style="text-align: center;">Dimensione file massima: ~70gb</p>
+        <p style="text-align: center;"><a href="tos_privacypolicy.pdf">Termini di servizio e Privacy Policy</a></p>
+        <p style="text-align: center;"><a href="faq_it.pdf">Domande frequenti</a></p>
+        <p style="text-align: center;">Segnala un abuso: <a href="mailto:abuse@shishtransfer.com">abuse@shishtransfer.com</a></p>
+        <!--<div id="tgauth" style="text-align: center;"><script async src="https://telegram.org/js/telegram-widget.js?10" data-telegram-login="shishtransferbot" data-size="large" data-userpic="false" data-onauth="onTelegramAuth(user)"></script></div>-->
+        <form action="https://shishtransfer.com/upload" id="upload" class="dropzone"></form>
+        <div id="files"></div><br>
+        <div id="counters">
+            <div>
+                Dati trasferiti
+                <b id="dsal">0 K</b>
+            </div>
+            <div>
+                Spazio utilizzato
+                <b id="dsala">0 K</b>
+            </div>
+        </div>
+    </body>
+    
+</html>
