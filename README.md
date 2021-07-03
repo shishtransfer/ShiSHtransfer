@@ -16,7 +16,9 @@
 - systemd (you can use whatever daemon you preefer but we officially support and give configs only for systemd)
 - ATLEAST 2 high-trust Telegram accounts, preferably on the nearest DC the server location
 - One high-trust Telegram account where all file get sent to recover them in case of a ban
+- Redis on default port (you can change that in ShishcatUploader/index.php)
 ## Installation
+- Create a MySQL database, and import the "shishtransfer_schema.sql" file in the root of this repository.
 - run `composer install`
 - Put the 2 high trust accounts in session folder and compile 
 - Install sf_systemctl and sfa_systemctl as service
