@@ -39,7 +39,7 @@ class RangesHandler
         }, $range, $size, $partsize);
     }
 
-    private function getRange($range, $size)
+    public static function getRange($range, $size)
     {
         if (isset($range)) {
             $range = explode('=', $range, 2);
