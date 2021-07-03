@@ -9,7 +9,6 @@ require __DIR__ . "/utils/RangesHandler.php";
 require __DIR__ . "/API/dl.php";
 require __DIR__ . "/API/stats.php";
 require __DIR__ . "/API/delete.php";
-require __DIR__ . "/API/registered_ws.php";
 require __DIR__ . "/API/upload.php";
 
 use \Amp\ByteStream\ResourceOutputStream;
@@ -55,10 +54,6 @@ use Monolog\Logger;
     $router->addRoute('POST', '/upload', new \ShishTransfer\API\Upload($sclient,$db,$redis));
     $router->addRoute('GET', '/f/{id}', new \ShishTransfer\API\Download($sclient,$db,$redis,$logger));
     $router->addRoute('GET', '/delete/{hash}', new \ShishTransfer\API\Delete($sclient,$db,$redis));
-    $router->addRoute('GET', '/ref', new \Amp\Websocket\Server\Websocket($ws = new \ShishTransfer\API\RefsWS($sclient,$db,$redis)));
-    $router->addRoute('GET', '/getRef/{refid}', new \ShishTransfer\API\GetReference($sclient,$db,$redis,$ws));
-    $router->addRoute('GET', '/delRef/{refid}', new \ShishTransfer\API\DelReference($sclient,$db,$redis,$ws));
-    $router->addRoute('POST', '/addRef', new \ShishTransfer\API\AddReference($sclient,$db,$redis,$ws));
     $router->addRoute('GET', '/stats', new \ShishTransfer\API\Stats($sclient,$db,$redis));
     \ShishTransfer\Utils\GarbageCollector::start();
     $router->setFallback(new \Amp\Http\Server\StaticContent\DocumentRoot(__DIR__."/site"));
