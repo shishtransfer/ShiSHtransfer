@@ -3,7 +3,7 @@
 ![license wtfpl](https://img.shields.io/badge/LICENSE-WTFPL-green)
 [![MadelineProto](https://img.shields.io/badge/framework--telegram-MadelineProto-yellow)](https://github.com/danog/MadelineProto)
 [![AMP](https://img.shields.io/badge/framework--php-AMP-yellow)](https://github.com/amphp/)
-### This project is dead. The code of it is bad, wasteful of resources and probably broken. I made this project only to learn.
+###  I made this project only to learn.
 ### ⚠️ I don't assume any responsability. The software in this repository is provided without any warranty. If you decide to run this, you fully understand what it does and everything caused by it is completely your fault.
 ### A ban-resistant uploader on Telegram Network.
 ## [shishtransfer.com](https://shishtransfer.com)
