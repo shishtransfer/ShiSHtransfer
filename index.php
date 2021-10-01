@@ -33,7 +33,7 @@ $MadelineProto = new \danog\MadelineProto\API(__DIR__."/sessions/$argv[1].madeli
 ]);
 $MadelineProto->async(true);
 
-$conf = new \ShiSHTransferServer\Utils\ConfigParser($argv[1]);
+$conf = new \ConfigParser($argv[1]);
 \Amp\Loop::run(function () use ($MadelineProto,$conf) {
     yield $MadelineProto->start();
     $servers = [
